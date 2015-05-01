@@ -1,0 +1,32 @@
+{
+  "name": "split-array",
+  "version": "0.0.0",
+  "description": "Split an array into arrays of a specific length",
+  "license": "MIT",
+  "repository": "arthurvr/split-array",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "split",
+    "sub arrays",
+    "array",
+    "chunks",
+    "partials"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
