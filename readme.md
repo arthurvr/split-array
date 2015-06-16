@@ -36,7 +36,7 @@ The array to split up.
 
 #### maxLength
 
-*Required* 
+*Required*  
 Type: `number`  
 
 The maximum amount of items a partial can have
