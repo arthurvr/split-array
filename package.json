@@ -1,6 +1,6 @@
 {
   "name": "split-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Split an array into arrays of a specific length",
   "license": "MIT",
   "repository": "arthurvr/split-array",
