@@ -1,8 +1,7 @@
-'use strict';
-var test = require('ava');
-var splitArray = require('./');
+import test from 'ava';
+import splitArray from './';
 
-test('splits simple array', function (t) {
+test('splits simple array', t => {
 	t.same(
 		splitArray(['a', 'b', 'c', 'd', 'e', 'f'], 2),
 		[['a', 'b'], ['c', 'd'], ['e', 'f']]
@@ -16,7 +15,7 @@ test('splits simple array', function (t) {
 	t.end();
 });
 
-test('handles the last item correctly', function (t) {
+test('handles the last item correctly', t => {
 	t.same(
 		splitArray(['a', 'b', 'c', 'd', 'e', 'f', 'foo'], 6),
 		[['a', 'b', 'c', 'd', 'e', 'f'], ['foo']]
@@ -25,9 +24,9 @@ test('handles the last item correctly', function (t) {
 	t.end();
 });
 
-test('Throws on nonsense input', function (t) {
-	['foo', function () {}, null, {}].forEach(function (input) {
-		t.throws(function () {
+test('Throws on nonsense input', t => {
+	['foo', function () {}, null, {}].forEach(input => {
+		t.throws(() => {
 			splitArray(input, 1);
 		});
 	});
