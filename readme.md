@@ -13,7 +13,7 @@ $ npm install --save split-array
 ## Usage
 
 ```js
-var splitArray = require('split-array');
+const splitArray = require('split-array');
 
 splitArray(['a', 'b', 'c', 'd', 'e', 'f'], 2);
 //=> [['a', 'b'], ['c', 'd'], ['e', 'f']]
